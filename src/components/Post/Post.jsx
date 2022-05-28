@@ -1,6 +1,5 @@
 import React from 'react'
 import './Post.css';
-
 import Comment from '../../img/comment.png'
 import Share from '../../img/share.png'
 import Heart from '../../img/like.png'
@@ -17,7 +16,7 @@ const Post = ({data}) => {
         <img src={Share}  alt='' />
       </div>
 
-      <span>{data.likes} Likes</span>
+      <span style={{color:"var(--gray)", fontSize:"12px"}}>{data.likes} Likes</span>
       <div className="details">
           <span>{data.name} </span>
           <span>{data.desc} </span>
